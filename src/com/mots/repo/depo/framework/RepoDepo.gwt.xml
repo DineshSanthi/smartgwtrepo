@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  When updating your version of GWT, you should also update this DTD reference,
+  so that your app can take advantage of the latest GWT module capabilities.
+-->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
+  "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
+<module rename-to='repodepo'>
+
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+
+	<inherits name="com.google.gwt.user.User"/>
+	<inherits name="com.google.gwt.core.Core"/>
+	<inherits name="com.google.gwt.user.History"/>
+	<inherits name="com.google.gwt.i18n.I18N"/>
+	<inherits name="com.smartgwt.SmartGwtNoScript"/>
+	<inherits name="com.smartgwt.DrawingNoScript"/>
+	<inherits name="com.smartgwt.tools.SmartGwtTools"/>
+	<inherits name="com.smartclient.theme.graphite.GraphiteResources"/>
+	<inherits name="com.smartclient.theme.simplicity.SimplicityResources"/>
+	<inherits name="com.smartclient.theme.enterprise.EnterpriseResources"/>
+	<inherits name="com.smartclient.theme.enterpriseblue.EnterpriseBlueResources"/>
+	<inherits name="com.smartclient.theme.obsidian.ObsidianResources"/>
+	<inherits name="com.smartclient.theme.fleet.FleetResources"/>
+	<inherits name="com.smartclient.theme.treefrog.TreeFrogResources"/>
+	<inherits name="com.smartclient.theme.blackops.BlackOpsResources"/>
+	<inherits name="com.smartclient.theme.silverwave.SilverWaveResources"/>
+
+  <!-- Other module inherits                                      -->
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.mots.repo.depo.framework.client.RepoDepo'/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+  <!-- allow Super Dev Mode -->
+  <add-linker name="xsiframe"/>
+</module>
